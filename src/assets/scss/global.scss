@@ -1,0 +1,38 @@
+.wrapper {
+  width: calc(100% - 100px);
+  max-width: 1000px;
+  display: block;
+  margin: auto;
+}
+
+.block {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.text-1 {
+  font-size: 16px;
+  color: #555555;
+  line-height: 25px;
+
+}
+
+.line-b-g:before {
+  content: '';
+  width: calc(((100% - 1000px) / 2) + 100px);
+  position: absolute;
+  height: 10px;
+  background-color: $green;
+  left: 0;
+}
