@@ -18,21 +18,104 @@
 
 .title-1 {
   font-size: 50px;
-  font-weight: 800;
+  font-weight: 700;
 }
-
+.title-2 {
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: 400;
+}
+.title-3 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
 .text-1 {
   font-size: 16px;
   color: #555555;
   line-height: 25px;
-
 }
 
 .line-b-g:before {
   content: '';
   width: calc(((100% - 1000px) / 2) + 100px);
+  min-width: 100px;
   position: absolute;
   height: 10px;
   background-color: $green;
   left: 0;
+}
+
+.link-b {
+  display: block;
+  color: $blue;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.btn {
+  min-width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+
+  &.dark {
+    background-color: black;
+    color: white;
+  }
+
+  &.brd {
+    border: solid 2px #eeeeee;
+    color: $blue;
+  }
+  &.brd-r {
+    background: $red;
+    color: white;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.bg-b {
+  background-color: $blue;
+}
+.bg-g {
+  background-color: $green;
+}
+.bg-p {
+  background-color: $pink;
+}
+.bg-lb {
+  background-color: $light-blue;
+}
+
+.hover-g {
+  position: relative;
+  z-index: 2;
+  font-style: normal;
+  &:before {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: 5px;
+    background-color: $pink;
+    width: calc(100% - 2px);
+    height: calc(100% - 5px);
+    z-index: -1;
+    transition: width ease-out .3s;
+  }
+  &:hover {
+    &:before {
+      width: 2px;
+    }
+  }
 }

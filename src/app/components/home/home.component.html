@@ -1,9 +1,86 @@
 <header class="wrapper flex block">
-  <div>
-    <h1 class="title-1">L'application<br> de micro crédit</h1>
-    <h2 class="text-1 line-b-g">Plus besoin de banque avec {{ title }}. Emprunter ou investissez rapidement et sans justificatif !</h2>
-    <a class="link">En savoir plus</a>
-    <a class="btn">Télécharger {{ title }}</a>
-  </div>
-  <img class="screen" src="../../../assets/images/accueil_euko.png" alt="ecran d'accueil application Euko">
+    <div>
+        <h1 class="title-1">L'application<br> de micro crédit</h1>
+        <h2 class="text-1 line-b-g hide">Plus besoin de banque avec {{ title }}. Emprunter ou investissez en toute simplicité
+            grâce à nos prêts entre particuliers</h2>
+        <span class="link-b"></span>
+        <a class="btn dark appstore"></a>
+        <a class="btn brd">En savoir plus</a>
+    </div>
+    <img class="screen" src="../../../assets/images/accueil_euko.png" alt="ecran d'accueil application {{ title }}">
 </header>
+<main>
+    <div class="wrapper flex center rassurance">
+        <a href="#">
+            <p>Protégé par</p>
+            <img src="../../../assets/images/litigefr.png" alt="Litige.fr">
+        </a>
+        <a href="#">
+            <p>Soutenu par</p>
+            <img src="../../../assets/images/hetic.png" alt="Hétic">
+        </a>
+        <a href="#">
+            <p>Développé en</p>
+            <img src="../../../assets/images/madeinfrance.png" alt="France">
+        </a>
+    </div>
+    <div class="block surprise bg-p">
+        <div class="wrapper">
+            <div class="parent">
+                <h3 class="title-2">Emprunte jusqu'à <strong>700€</strong> en quelque clic sans aucun justificatif </h3>
+                <a class="btn brd-r" href="#"><p>Dîtes m'en plus</p></a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper screen-container ask flex">
+        <img class="img-ask" src="../../../assets/images/euko_demandes.png" alt="Application Euko sur Iphone X">
+        <div class="parent">
+            <h2 class="title-3">Publie ta demande de crédit en ligne</h2>
+            <p class="text-1">
+                Sur {{ title }}, c'est toi qui impose tes conditions ! La <em class="hover-g">sommes</em> à emprunter, la <em class="hover-g">durée</em> de
+                remboursement et les <em class="hover-g">mensualités</em>. Il ne te reste plus qu'à patienter jusqu'à l'offre d'un de nos
+                investisseurs.
+                <br><br>
+                Une fois l'offre accepté, un <em class="hover-g">contrat</em> sous seign est alors généré comme attestation légale du prêt. Vous êtes alors <em class="hover-g">protégé</em> en cas de litige.
+            </p>
+            <ul>
+                <li>
+                    <img src="../../../assets/images/SVG/anonymous.svg" alt="Icon anonymat">
+                    <p>Anonymat préservé</p>
+                </li>
+                <li>
+                    <img src="../../../assets/images/SVG/security-on.svg" alt="Icon sécurité">
+                    <p>Paiement sécurisé</p>
+                </li>
+                <li class="last">
+                    <img src="../../../assets/images/SVG/law.svg" alt="Icon contrat">
+                    <p>Contrat sous seign</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapper screen-container verification flex">
+        <div class="parent">
+            <h2 class="title-3">La sécurité avant tout</h2>
+            <p class="text-1 line-b-g hide">
+                Sur {{title}}, 100% de nos utilisateurs sont <em class="hover-g">vérifiés</em> pour vous garantir un maximum de sécurité.
+                <br><br>
+                Nous vérifions <em class="hover-g">manuellement</em> chaque profil d'utilisateur. Carte d'identité, concordance des informations,
+                tout est passé au peigne. Aucune demande de crédit n'est accepté avec d'avoir été vérifié par nos soins.
+                <br><br>
+                Avec {{title}}, vous misez sur une plateforme <em class="hover-g">fiable</em> et <em class="hover-g">sécurisé</em> qui place l'humain avant la machine.
+            </p>
+        </div>
+        <img class="img-ask" src="../../../assets/images/euko_verification.png" alt="Application Euko sur Iphone X">
+    </div>
+    <div class="block yes bg-g">
+        <div class="wrapper">
+            <div class="parent">
+                <h3 class="title-2">Envie d'<strong>investir</strong> facilement en ligne sans prendre de gros risques ?
+                </h3>
+                <p>Réponds aux demandes de crédits de nos utilisateurs et empoche jusqu'à 22% d'intérêts !</p>
+                <a class="btn brd-r" href="#"><p>Dîtes m'en plus</p></a>
+            </div>
+        </div>
+    </div>
+</main>

@@ -4,9 +4,144 @@
 }
 
 header .text-1 {
-  margin: 40px 0;
+  margin: 40px 0 90px;
 }
 
 .line-b-g:before {
   margin-top: -40px;
 }
+
+.appstore {
+  background-image: url('../../../assets/images/app-store.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 20px;
+}
+
+.rassurance {
+  justify-content: space-around;
+  padding: 50px 0;
+
+  img {
+    height: 100px;
+    width: auto;
+  }
+  p {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin: 20px;
+    color: #333333;
+    &::after {
+      content: '';
+      display: block;
+      margin: 10px auto 0;
+      width: 40%;
+      height: 4px;
+      background-color: #87ff88;
+      transition: width ease .3s;
+    }
+    &:hover::after {
+      width: 80%;
+    }
+  }
+}
+
+.surprise {
+  background-image: url('../../../assets/images/men-surprise.jpg');
+
+  .wrapper {
+    position: relative;
+    height: 500px;
+  }
+
+  .parent {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+  }
+  .btn {
+    margin-top: 60px;
+  }
+}
+.surprise, .yes {
+  background-size: contain;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.yes {
+  background-image: url('../../../assets/images/yes-men.jpg');
+
+  .wrapper {
+    position: relative;
+    height: 500px;
+  }
+
+  .parent {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+  }
+  .btn {
+    margin-top: 60px;
+  }
+}
+
+.screen-container {
+  .parent {
+    width: 40%;
+  }
+  .img-ask {
+    width: 50%;
+    height: auto;
+  }
+  ul p {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.wrapper.ask {
+  margin: 100px auto;
+  .parent {
+    right: 0;
+    width: 50%;
+  }
+  ul img {
+    width: 40px;
+    height: auto;
+  }
+  ul {
+    margin-top: 50px;
+    text-align: center;
+  }
+  li:not(.last) {
+    margin-bottom: 40px;
+  }
+}
+
+.wrapper.verification {
+  .img-ask {
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .parent {
+    width: 40%;
+  }
+  .title-3 {
+    margin-bottom: 40px;
+  }
+}
+
